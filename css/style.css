@@ -1,0 +1,86 @@
+html{
+  scroll-behavior: smooth;
+}
+header, #service, #about, #contact{
+  width: 100%;
+  height: 100vh;
+  color:#333;
+}
+header img {
+  border: thin solid grey;
+  border-radius: 50%;
+}
+li{
+  text-decoration: none;
+  list-style: none;
+}
+header{
+  background:#DFF2A2;
+  font-weight: bold;
+}
+#about{
+  background-color: #B1CA65;
+}
+#service{
+  background-color: #DBF1A1
+}
+#contact{
+  background-color: #3A5000
+  color:#fff;
+  font-size: 28px;
+  justify-content: center;
+}
+#contact a{
+  font-size: 28px;
+  color:#B1CA65
+}
+#contact a:hover{
+  font-size: 28px;
+  color:#DBF1A1;
+  text-decoration: none;
+}
+
+/* SIDER BAR CSS */
+/* Style the sidebar - fixed full height */
+.sidebar {
+  height: 100%;
+  width: 160px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #333;
+  background-color: rgb(0,0,0,0.5);
+  overflow-x: hidden;
+  padding-top: 16px;
+}
+
+/* Style sidebar links */
+.sidebar a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #fff;
+  display: block;
+}
+
+/* Style links on mouse-over */
+.sidebar a:hover {
+  color: #B1CA65;
+}
+
+/* Add media queries for small screens (when the height of the screen is less than 450px, add a smaller padding and font-size) */
+@media screen and (max-width: 600px) {
+  .sidebar {
+    height: auto;
+    width: 100%;
+    display:flex;
+    justify-content:center;
+  }
+  .sidebar i {
+    display: none;
+  }
+  .container{
+    padding-top:65px;
+  }
+}
